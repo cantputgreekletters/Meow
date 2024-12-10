@@ -17,9 +17,7 @@ int main(int argc, char * argv[])
     }
     Tokenizer tokenizer(args, argc - 1);
     std::vector<Token> token_list = tokenizer();
-    std::cout << "Tokens = " << TokenListToString(token_list) << std::endl;
     Interpreter interpreter(token_list);
     interpreter();
-    interpreter.PrintValues();
     return 0;
 }
