@@ -17,6 +17,12 @@ meow "arg" "file_path" "contents"
 
 -w writes a file
 
-# Example
+-p specifies a path
+
+-r reads a file
+
+# Examples
 
 meow -w file.txt "Hello world"
+
+meow -rw "Hello world" -p file.txt
